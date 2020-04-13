@@ -1,5 +1,9 @@
-form {
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+fieldset {
     display: flex;
     flex-direction: column;
 }
-
