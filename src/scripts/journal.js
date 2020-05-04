@@ -2,20 +2,25 @@
     Define the keys and value for a JavaScript object that
     represents a journal entry about what you learned today
 */
-const journalEntry = [
-    {
-    date: "date",
-    topic: "topic", 
-    entry: "yada yada yada",
-    mood: "pit of despair"
-}
-]
+fetch("http://localhost:3000/entries") // Fetch from the API
+    .then(entries => entries.json())  // Parse as JSON
+    .then(parsedEntries => {
+        // What should happen when we finally have the array?
+        
+        console.table(parsedEntries)
+        const entryContainer = document.querySelector(".entryLog")
 
-const entries = []
+        
+        
+        parsedEntries.forEach(entry => entryContainer.innerHTML += makeJournalEntryComponent(entry))
+       
 
-entries.push(journalEntry)
 
+    })
 
+//const entries = []
+
+//entries.push(journalEntry)
 
 const makeJournalEntryComponent = (journalEntry) => {
     
@@ -29,15 +34,7 @@ const makeJournalEntryComponent = (journalEntry) => {
 
     
 }
-const entryContainer = document.querySelector(".entryLog")
 
-const renderJournalEntries = (entries) => {
-    entryContainer.innerHTML = ""
-    entries.forEach(entry => entryContainer.innerHTML += makeJournalEntryComponent(entry))
-}
-
-// Invoke the render function
-renderJournalEntries(journalEntry)
 
 
 
