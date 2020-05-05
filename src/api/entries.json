@@ -1,11 +1,25 @@
 {
-   "entries" : [
-        {
-        "id": 1,
-        "date": "date",
-        "topic": "topic", 
-        "entry": "yada yada yada",
-        "mood": "pit of despair"
+  "entries": [
+    {
+      "id": 1,
+      "date": "date",
+      "topic": "topic",
+      "entry": "yada yada yada",
+      "mood": "pit of despair"
+    },
+    {
+      "date": "2020-05-05",
+      "topic": "post",
+      "entry": "stuff",
+      "mood": "Good",
+      "id": 4
+    },
+    {
+      "date": "2020-05-05",
+      "topic": "Posts",
+      "entry": "more stuff \nshit is hard",
+      "mood": "Confused",
+      "id": 5
     }
-    ]
+  ]
 }
