@@ -1,6 +1,6 @@
 
     // What should happen when we finally have the array?
-    
+    import makeJournalEntryComponent from "./entryComponent.js"
     const entryContainer = document.querySelector(".entryLog")
 
     
@@ -9,3 +9,5 @@
 
 
     }
+
+    export default renderToDom
