@@ -5,6 +5,7 @@
 
     
     const renderToDom = (parsedEntries) => {
+        entryContainer.innerHTML = ""
         parsedEntries.forEach(entry => entryContainer.innerHTML += makeJournalEntryComponent(entry))
 
 
