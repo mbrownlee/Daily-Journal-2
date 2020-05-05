@@ -4,7 +4,7 @@ const API = {
       .then((entries) => entries.json());
   },
   createNewEntry(newJournalEntryObj) {
-    fetch("http://localhost:3000/entries", {
+    return fetch("http://localhost:3000/entries", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

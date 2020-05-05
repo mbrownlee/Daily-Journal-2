@@ -19,7 +19,9 @@ saveButton.addEventListener("click", () => {
         alert("NO POST FOR YOU!")
     } else {
         const entryCreationObj = newJournalEntry(date, topic, content, mood)
-        API.createNewEntry(entryCreationObj)
+        API.createNewEntry(entryCreationObj).then(() => {
+            API.getJournalEntries().then(renderToDom)
+        })
     }
 
 })

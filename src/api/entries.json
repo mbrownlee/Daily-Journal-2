@@ -9,17 +9,10 @@
     },
     {
       "date": "2020-05-05",
-      "topic": "post",
-      "entry": "stuff",
-      "mood": "Good",
-      "id": 4
-    },
-    {
-      "date": "2020-05-05",
-      "topic": "Posts",
-      "entry": "more stuff \nshit is hard",
-      "mood": "Confused",
-      "id": 5
+      "topic": "Post with Fetch",
+      "entry": "This shit is hard. Couldn't get through it without assistance.",
+      "mood": "Frustrated",
+      "id": 2
     }
   ]
 }
