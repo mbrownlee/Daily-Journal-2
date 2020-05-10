@@ -26,11 +26,16 @@ saveButton.addEventListener("click", () => {
 
 })
 
-// Invoke the factory function, passing along the form field values
-
-
-
-// Use `fetch` with the POST method to add your entry to your API
-
-
-
+const radioButton = document.getElementsByName("radio--mood")
+console.log(radioButton, "radio")
+radioButton.forEach(moodButton => {
+    moodButton.addEventListener("click", event => {
+    
+    const mood = event.target.value
+    API.getJournalEntries()
+    .then(filteredEntries => {
+        let filteredResults = filteredEntries.filter(entry => entry.mood === mood)
+        renderToDom(filteredResults)
+    })
+}
+) })

@@ -13,6 +13,13 @@
       "entry": "This shit is hard. Couldn't get through it without assistance.",
       "mood": "Frustrated",
       "id": 2
+    },
+    {
+      "date": "2020-05-08",
+      "topic": "Radio Buttons",
+      "entry": "Today I'm trying to make radio buttons work on my Daily Journal. It has been a pretty good week in coding bootcamp.",
+      "mood": "Good",
+      "id": 3
     }
   ]
 }

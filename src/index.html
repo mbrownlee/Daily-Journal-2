@@ -39,10 +39,40 @@
     <fieldset>
     <button id="saveButton">Record Journal Entry </button>
 </fieldset>
-    <article class="entryLog">
 
-    </article>
+    <fieldset>
+        <legend>At which emotional scab do you wish to pick?:</legend>
+        <div>
+          <input type="radio" id="radio--good"
+           name="radio--mood" value="Good" checked>
+          <label for="radio--good">Good</label>
+
+          <input type="radio" id="radio--okay"
+           name="radio--mood" value="Okay" checked>
+          <label for="radio--okay">Okay</label>
     
+          <input type="radio" id="radio--neutral"
+           name="radio--mood" value="Neutral" checked>
+          <label for="radio--neutral">Neutral</label>
+
+          <input type="radio" id="radio--confused"
+           name="radio--mood" value="Confused" checked>
+          <label for="radio--confused">Confused</label>
+
+          <input type="radio" id="radio--frustrated"
+           name="radio--mood" value="Frustrated" checked>
+          <label for="radio--frustrated">Frustrated</label>
+
+          <input type="radio" id="radio--pit"
+           name="radio--mood" value="pit of despair" checked>
+          <label for="radio--pit">Pit Of Despair</label>
+          
+        </div>
+    </fieldset>
+        <article class="entryLog">
+
+        </article>
+      
     <script type = "module" src="scripts/journal.js"></script>
 </body>
 </html>
