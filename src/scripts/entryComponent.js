@@ -6,8 +6,10 @@ const makeJournalEntryComponent = (journalEntry) => {
     <h4>${journalEntry.date}</h4>
     <p>${journalEntry.entry}</p>
     <h4>${journalEntry.mood}</h4>
+    <button id="delete--${journalEntry.id}" class="delete__btn">Delete</button>
     </div>`
 
     
 }
+
 export default makeJournalEntryComponent

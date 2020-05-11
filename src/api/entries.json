@@ -1,13 +1,6 @@
 {
   "entries": [
     {
-      "id": 1,
-      "date": "date",
-      "topic": "topic",
-      "entry": "yada yada yada",
-      "mood": "pit of despair"
-    },
-    {
       "date": "2020-05-05",
       "topic": "Post with Fetch",
       "entry": "This shit is hard. Couldn't get through it without assistance.",
@@ -20,6 +13,13 @@
       "entry": "Today I'm trying to make radio buttons work on my Daily Journal. It has been a pretty good week in coding bootcamp.",
       "mood": "Good",
       "id": 3
+    },
+    {
+      "date": "2020-05-11",
+      "topic": "Holy Moly",
+      "entry": "It worked! I hit the delete button and the posts delete! Hot damn!",
+      "mood": "Good",
+      "id": 4
     }
   ]
 }

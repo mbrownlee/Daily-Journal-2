@@ -3,6 +3,7 @@ import API from "./data.js"
 import renderToDom from "./entriesDOM.js"
 import newJournalEntry from "./entryCreation.js"
 
+
 API.getJournalEntries().then(renderToDom)
 
 const saveButton = document.querySelector("#saveButton")
@@ -26,6 +27,24 @@ saveButton.addEventListener("click", () => {
 
 })
 
+
+const entryOutputContainer = document.querySelector(".entryLog")
+
+entryOutputContainer.addEventListener("click", (event) => {
+    if (event.target.id.startsWith("delete--")) {
+      const entryId = event.target.id.split("--")[1]
+      API.deleteJournalEntries(entryId)
+    
+  .then(getAndRenderAllEntries)
+     }
+    })
+
+    function getAndRenderAllEntries() {
+        entryOutputContainer.innerHTML = ""
+        API.getJournalEntries().then(renderToDom)
+        }
+      
+
 const radioButton = document.getElementsByName("radio--mood")
 console.log(radioButton, "radio")
 radioButton.forEach(moodButton => {
@@ -39,3 +58,5 @@ radioButton.forEach(moodButton => {
     })
 }
 ) })
+
+
