@@ -3,7 +3,7 @@
     {
       "date": "2020-05-05",
       "topic": "Post with Fetch",
-      "entry": "This shit is hard. Couldn't get through it without assistance.",
+      "entry": "This shit is hard. Couldn't get through it without assistance.grbm,kegmbkegmfk",
       "mood": "Frustrated",
       "id": 2
     },
@@ -27,6 +27,20 @@
       "entry": "i feel better about ya tomorrow  \nReload for momma\nhow about now?\nmaking me crazy\none more time\npen and paper work just fine\nfeather and quill?",
       "mood": "Good",
       "id": 5
+    },
+    {
+      "date": "2020-05-14",
+      "topic": "Assessment",
+      "entry": "The assessment sent me off the rails for a bit this morning.",
+      "mood": "Pit of Despair",
+      "id": 6
+    },
+    {
+      "date": "2020-05-14",
+      "topic": "Post",
+      "entry": "Apparently, when making edit work, I made post not work anymore. But I can post again.",
+      "mood": "Okay",
+      "id": 7
     }
   ]
 }

@@ -32,7 +32,8 @@ saveButton.addEventListener("click", () => {
 
     if (date === "" || topic === "" || content === "" || mood === "") {
         alert("NO POST FOR YOU!")
-    } else if (entryId.value !== "") {
+        
+    } else if (entryId !== "") {
         entryEdit(entryId)
         clearForm()
     }
@@ -42,6 +43,7 @@ saveButton.addEventListener("click", () => {
         API.createNewEntry(entryCreationObj).then(() => {
             API.getJournalEntries().then(renderToDom)
         })
+        clearForm()
     }
 
 })
@@ -67,12 +69,12 @@ const repopulateForm = entryId => {
         entryTopicInput.value = ""
         entryJournalInput.value = ""
         entryMoodInput.value = ""
+        hiddenEntryId.value = ""
         
       }
 const entryOutputContainer = document.querySelector(".entryLog")
 
 entryOutputContainer.addEventListener("click", (event) => {
-    
     
         if (event.target.id.startsWith("edit--")) {
           const entryEditId = event.target.id.split("--")[1]
